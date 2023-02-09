@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: novel-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        group: ${spring.application.name}
+        namespace: novel
+    #关闭Spring自带的X-Forwarded-Prefix设置
+    gateway:
+      x-forwarded:
+        prefix-enabled: false
+
+  main:
+    allow-bean-definition-overriding: true
+

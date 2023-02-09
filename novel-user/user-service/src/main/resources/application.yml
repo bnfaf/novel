@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    include: [common]
+
+  mail:
+    default-encoding: utf-8
+    host: smtp.qq.com
+    username: 1084083934@qq.com
+    password: pmidayxwkguxhdhh
+
